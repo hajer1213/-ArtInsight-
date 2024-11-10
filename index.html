@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقييم رسمات الأطفال</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>تقييم رسمات الأطفال</h1>
+        <div class="camera-container">
+            <video id="video" width="640" height="480" autoplay></video>
+            <canvas id="canvas" width="640" height="480"></canvas>
+            <button id="captureBtn">التقاط الصورة</button>
+        </div>
+        <div id="result">
+            <h2>نتائج التقييم:</h2>
+            <p id="classification">لم يتم التقاط صورة بعد!</p>
+        </div>
+        <div id="ageGroup">
+            <h3>الفئة العمرية:</h3>
+            <p id="ageRange">يتم تحديد الفئة العمرية...</p>
+        </div>
+        <div id="mood">
+            <h3>الحالة المزاجية:</h3>
+            <p id="moodResult">يتم تحديد الحالة المزاجية...</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
